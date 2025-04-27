@@ -14,7 +14,7 @@ app.listen(3000, () => {
 
 function createBot() {
   const bot = mineflayer.createBot({
-    host: "minecraft.codanime.net",
+    host: "shirairyu.aternos.me",
     port: 26141,
     username: "InsaneHuman4456"
   });
