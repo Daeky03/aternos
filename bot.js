@@ -16,7 +16,8 @@ function createBot() {
   const bot = mineflayer.createBot({
     host: "shirairyu.aternos.me",
     port: 26141,
-    username: "InsaneHuman4456"
+    username: "InsaneHuman4456",
+    version: "1.21.72"
   });
 
   bot.loadPlugin(pathfinder);
