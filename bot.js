@@ -21,7 +21,7 @@ function createBot() {
 
   bot.loadPlugin(pathfinder);
   bot.loadPlugin(autoEat);
-  bot.autoEat.enableAuto();
+  autoEat.enableAuto();
   
   bot.on('death', () => {
 
