@@ -1,6 +1,16 @@
 const mineflayer = require('mineflayer');
 const { pathfinder, Movements } = require('mineflayer-pathfinder');
 const autoeat = require('mineflayer-auto-eat');
+const express = require("express");
+const app = express();
+
+app.get("/", async (req, res) => {
+  res.send("ATERNOS AKTİF KARDESİM");
+})
+
+app.listen(3000, () => {
+  console.log("3000 Portu ile aktif");
+})
 
 function createBot() {
   const bot = mineflayer.createBot({
