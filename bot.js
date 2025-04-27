@@ -17,7 +17,7 @@ function createBot() {
     host: "shirairyu.aternos.me",
     port: 26141,
     username: "InsaneHuman4456",
-    version: "1.21.72.02"
+    version: "1.21"
   });
 
   bot.loadPlugin(pathfinder);
