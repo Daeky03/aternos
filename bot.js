@@ -1,6 +1,6 @@
 const mineflayer = require('mineflayer');
 const { pathfinder, Movements } = require('mineflayer-pathfinder');
-const autoeat = require('mineflayer-auto-eat');
+const { loader: autoEat } = require('mineflayer-auto-eat');
 const express = require("express");
 const app = express();
 
@@ -20,7 +20,8 @@ function createBot() {
   });
 
   bot.loadPlugin(pathfinder);
-  bot.loadPlugin(autoeat);
+  bot.loadPlugin(autoEat);
+  bot.autoEat.enableAuto();
   
   bot.on('death', () => {
 
